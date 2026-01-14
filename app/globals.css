@@ -1,0 +1,177 @@
+@import "tailwindcss";
+
+/* :root {
+  --background: #ffffff;
+  --foreground: #171717;
+} */
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-poppins: var(--font-poppins);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif, poppins;
+}
+
+@layer utilities {
+  .animate-spin-slow {
+    animation: spin 10s linear infinite;
+  }
+
+  .animate-spin-reverse-slower {
+    animation: spin-reverse 15s linear infinite;
+  }
+  
+  .appear-animate {
+    animation: appear-anim linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 60%;
+  }
+
+  .animate-about-show {
+    animation: appear-about linear; 
+    animation-timeline: view();
+    animation-range: entry 0% cover 80%;
+  }
+  .animate-lines {
+    animation: appear-line 15s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 90%;
+  }
+
+  .animate-photo {
+    animation: appear-photo linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+
+  .animate-scroll-left {
+    display: flex;
+    gap: 6rem;
+    animation: scroll-anim 15s linear infinite;
+  }
+
+  .animate-scroll-right {
+    display: flex;
+    gap: 6rem;
+    animation: scroll-animate 15s linear infinite;
+  }
+  .grid-bg {
+    background:
+      linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px),
+      linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+    animation: gridMove 5s linear infinite;
+  }
+
+  .grid-bg-two {
+    background:
+      linear-gradient(-90deg, rgba(0,0,0,0.04) 1px, transparent 1px),
+      linear-gradient(90deg,rgba(0,0,0,0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+    animation: gridMoveTwo 5s linear infinite;
+  }
+
+  .animate-fade-out {
+    animation: fadeOut linear;
+    animation-timeline: view();
+    animation-range: cover 55%;
+  }
+  
+  @keyframes gridMoveTwo {
+    from {
+      background-position: 1 0;
+    } to {
+      background-position: 200px 200px;
+    }
+  }
+
+  @keyframes fadeOut {
+    from {
+      scale: 1;
+    } to {
+      scale: 0;
+    }
+  }
+
+  @keyframes gridMove {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: 200px 200px;
+    }
+  }
+
+  @keyframes scroll-animate {
+    from {
+      transform: translateX(-50%)
+    } to {
+      transform: translateX(0%)
+    }
+  }
+
+  @keyframes scroll-anim {
+    from {
+      transform: translateX(0%);
+    } to {
+      transform: translateX(-50%)
+    }
+  }
+
+  @keyframes appear-photo {
+    from {
+      scale: 0;
+    } to {
+      scale: 1;
+    }
+  }
+  @keyframes appear-line {
+    0% {
+      width: 0;
+    } 50% {
+      width: 5;
+    }
+  }
+  @keyframes appear-about {
+    from {
+      scale: 0;
+      opacity: 0;
+    } to {
+      scale: 1;
+      opacity: 1;
+    }
+  }
+  @keyframes appear-anim {
+    from {
+      opactiy: 0;
+      scale: 0.5;
+    } to {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+
+  @keyframes spin-reverse {
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+}
+

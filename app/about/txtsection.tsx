@@ -29,7 +29,7 @@ export default function TxtSection() {
             <span ref={textRef} className="my-3 w-full lg:p-0 lg:w-auto text-justify">
                {typing}
             </span>
-            <div className="w-full flex justify-center">
+            <div className="w-full flex justify-center py-5">
                 <button className="border px-4 py-2 rounded-full text-center flex justify-center bg-black/50 text-white hover:bg-gray-700 cursor-pointer">Download CV</button>
             </div>
         </div>

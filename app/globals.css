@@ -62,15 +62,21 @@ body {
   }
 
   .animate-scroll-left {
+    width: max-content;
+    will-change: transform;
+    transform: translateZ(0);
     display: flex;
     gap: 6rem;
-    animation: scroll-anim 15s linear infinite;
+    animation: scroll-anim 30s linear infinite;
   }
 
   .animate-scroll-right {
+    width: max-content;
+    will-change: transform;
+    transform: translateZ(0);
     display: flex;
     gap: 6rem;
-    animation: scroll-animate 15s linear infinite;
+    animation: scroll-animate 30s linear infinite;
   }
   .grid-bg {
     background:
@@ -79,24 +85,24 @@ body {
     background-size: 40px 40px;
     animation: gridMove 5s linear infinite;
   }
-
-  .grid-bg-two {
-    background:
-      linear-gradient(-90deg, rgba(0,0,0,0.04) 1px, transparent 1px),
-      linear-gradient(90deg,rgba(0,0,0,0.04) 1px, transparent 1px);
-    background-size: 40px 40px;
-    animation: gridMoveTwo 5s linear infinite;
-  }
-
   .animate-fade-out {
     animation: fadeOut linear;
     animation-timeline: view();
     animation-range: cover 55%;
   }
+  .grid-bg-two {
+    background:
+      linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px),
+      linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px);
+    background-size: 100px 100px;
+    animation: gridMoveTwo 5s linear infinite;
+  }
+
+  
   
   @keyframes gridMoveTwo {
     from {
-      background-position: 1 0;
+      background-position: 0 0;
     } to {
       background-position: 200px 200px;
     }

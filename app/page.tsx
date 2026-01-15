@@ -20,13 +20,13 @@ export default function App() {
         <About></About>
       </section>
       <section id="project" className="relative overflow-hidden min-h-[900px]">
-        <div className="absolute inset-0 z-0 grid grid-cols-[repeat(auto-fill,100px)] pointer-events-none group">
+        <div className="absolute inset-0 z-0 grid grid-cols-[repeat(auto-fill,minmax(50px,1fr))] lg:grid-cols-[repeat(auto-fill,minmax(100px,1fr))] pointer-events-auto group">
           {Array.from({ length: 133 }).map((_,i) => (
             <div key={i} className="border border-black/5  hover:scale-150 group-hover:scale-100 hover:bg-black/50 transform  duration-700 ease-out transition-all" style={{ pointerEvents: "auto"}}></div>
 
           ))}
         </div>
-        <div className="relative z-10 w-full mx-auto pointer-events-auto">
+        <div className="relative z-10 w-full mx-auto pointer-events-none">
           <Projects></Projects>
         </div>
       </section>

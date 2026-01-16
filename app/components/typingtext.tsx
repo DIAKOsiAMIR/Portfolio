@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 
 
 export default function Typetext() {
-    const texts = ["Frontend Developer", "Backend Developer", "Fullstack Developer", "Software Developer"];
+    const texts = [ "Web App Developer","Fullstack Developer", "Software Developer"];
 
     const [index, setIndex] = useState(0);
     const [subIndex, setSubIndex] = useState(0);

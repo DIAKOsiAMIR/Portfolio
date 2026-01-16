@@ -98,8 +98,20 @@ body {
     animation: gridMoveTwo 5s linear infinite;
   }
 
-  
-  
+  .animate-spin-setting {
+    animation: spin-setting linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+
+  @keyframes spin-setting {
+    from {
+      transform: rotate(0deg);
+    } to {
+      transform: rotate(120deg);
+    }
+  }
+
   @keyframes gridMoveTwo {
     from {
       background-position: 0 0;

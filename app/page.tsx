@@ -29,6 +29,9 @@ export default function App() {
         <div className="relative z-10 w-full mx-auto pointer-events-none">
           <Projects></Projects>
         </div>
+        <div className=" pointer-events-auto flex justify-center absolute mx-auto bottom-0 w-full p-4 bg-linear-to-t from-gray-400 to-transparent rounded-t-[10000px] -mb-190 lg:-mb-160 h-[900px]"> 
+          <h2 className="py-20 animate-pulse text-3xl font-poppins font-bold">More Coming Soon...</h2>
+        </div>
       </section>
       <section id="contact">
         <Home></Home>

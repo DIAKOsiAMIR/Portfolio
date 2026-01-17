@@ -50,7 +50,7 @@ body {
     animation-range: entry 0% cover 80%;
   }
   .animate-lines {
-    animation: appear-line 15s linear;
+    animation: appear-line linear;
     animation-timeline: view();
     animation-range: entry 0% cover 90%;
   }
@@ -102,6 +102,19 @@ body {
     animation: spin-setting linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
+  }
+
+  .animate-pop-up {
+    animation: appear-coming-soon linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+  }
+  @keyframes appear-coming-soon {
+    from {
+      scale: 0;
+    } to {
+      scale: 10;
+    }
   }
 
   @keyframes spin-setting {

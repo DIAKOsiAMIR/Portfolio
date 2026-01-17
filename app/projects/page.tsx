@@ -1,6 +1,6 @@
 import ProjectSection from "./projsection";
 import { IoSettingsOutline } from "react-icons/io5";
-
+import ComingSoon from "./comingsoon";
 export default function Projects() {
     return(
         <div className="lg:mx-auto lg:w-[50%]">
@@ -16,6 +16,7 @@ export default function Projects() {
             <div className="">
                 <ProjectSection></ProjectSection>
             </div>
+
         </div>
     );
 }

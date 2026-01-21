@@ -35,9 +35,6 @@ export default function App() {
           <ComingSoon></ComingSoon>
         </div>
       </section>
-      <section id="contact">
-        <Contact/>
-      </section>
    </main>
   );
 }

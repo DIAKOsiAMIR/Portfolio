@@ -2,7 +2,7 @@
 import Link from "next/link"
 import { useEffect, useState } from "react"
 
-const section = ["home","about","project","contact"]
+const section = ["home","about","project"]
 
 export default function Header() {
     const [active, setActive] = useState("home");

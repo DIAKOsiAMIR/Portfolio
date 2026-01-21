@@ -30,7 +30,7 @@ export default function TxtSection() {
                {typing}
             </span>
             <div className="w-full flex justify-center py-5">
-                <a href="/public/Resume_PerezAmirLatest.pdf" download={"Resume_PerezAmirLatest.pdf"} className="border px-4 py-2 rounded-full text-center flex justify-center bg-black/50 text-white hover:bg-gray-700 cursor-pointer">Download CV</a>
+                <a href="/Resume_PerezAmirLatest.pdf" download={"Resume_PerezAmirLatest.pdf"} className="border px-4 py-2 rounded-full text-center flex justify-center bg-black/50 text-white hover:bg-gray-700 cursor-pointer">Download CV</a>
             </div>
         </div>
     )

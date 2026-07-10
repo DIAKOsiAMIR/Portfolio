@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react"
 
 export default function TxtSection() {
-    const text =" A dedicated 4th-year BSIT student with hands-on experience in programming and web development. Have experience in Prisma, JavaScript, and Java, and worked with modern frameworks such as ReactJS, Next.js, and TailwindCSS. Passionate about solving problems building efficient websites, and learning new technologies. Known for being hardworking,adaptable, and eager to grow in a professional IT environment. Actively looking for an opportunity to contribute to meaningful tech projects while expanding my skills as part of a collaborative development team"
+    const text ="Fresh BS Information Technology graduate with hands-on experience in programming and web development. Have experience in Prisma, JavaScript, and Java, and worked with modern frameworks such as ReactJS, Next.js, and TailwindCSS. Passionate about solving problems building efficient websites, and learning new technologies. Known for being hardworking,adaptable, and eager to grow in a professional IT environment. Actively looking for an opportunity to contribute to meaningful tech projects while expanding my skills as part of a collaborative development team"
     const [typing, setTyping] = useState("");
     const textRef = useRef<HTMLSpanElement>(null)
 
